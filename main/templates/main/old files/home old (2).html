@@ -1,0 +1,48 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block title %}npt - homepage{% endblock %}
+
+{% block content %}
+
+
+<p class="text-center", style="font-family: modak, sans-sherif; font-size: 9rem; height: 150px; width: 100%;
+color: #133863">
+NPT
+</p>
+
+<p class="text-center" , style="font-family: modak, sans-sherif; font-size: 2rem; height: auto; width: 100%;
+color: #133863">
+HANDEGEKNOOPTE OOSTERSE TAPIJTEN
+</p>
+
+<div class="d-flex justify-content-center">
+	<video controls src="{% static 'main/videos/lol.MP4' %}" autoplay muted style="
+		position: relative;
+		width: 90%;
+		max-width: 100%
+		height: auto;
+		outline: none;">
+	</video>
+</div>
+
+<br>
+
+<p class="text-center shadow-lg bg-body rounded fs-4 fw-light mx-5">
+Welkom bij NPT. Wij bieden u een ruim assortiment aan tapijten van allerlei soorten en maten aan. Dat doen wij al sinds &ltjaartal oprichting&gt. Al onze tapijten zijn handgeknoopt en van uiterste kwaliteit. Wij bieden u ook deskundig advies over geschikte kleden voor alle soorten inrichtingen.
+</p>
+
+<br>
+
+<div class="card text-center bg-success fs-4 mx-auto" style="width: 80%;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item bg-success text-white">Testen 14 dagen</li>
+    <li class="list-group-item bg-success text-white">Inruilen mogelijk</li>
+    <li class="list-group-item bg-success text-white">Vestibulum at eros</li>
+  </ul>
+</div>
+
+<br><br><br>
+
+{% endblock %}

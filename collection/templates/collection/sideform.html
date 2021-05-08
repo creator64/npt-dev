@@ -1,0 +1,140 @@
+{% block sidebar %}
+
+<head>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar form{
+  width: 75%;
+  padding-left: 5px;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	<form action="/collection/" method="GET" class="form-group">
+		
+		<!--maat-->
+		<div class="input-group input-group my-3">
+			<span class="input-group-text" id="inputGroup-sizing-sm">Maat</span>
+  			
+  			<input type="text" value="{{prf.prf_width}}" name="prf_width" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  			
+  			<span class="input-group-text" id="inputGroup-sizing-sm">X</span>
+  			
+  			<input type="text" value="{{prf.prf_height}}" name="prf_height" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+		</div>
+
+		<!--nauwkeurigheid-->
+		<div class="input-group input-group-sm mb-3">
+			<span class="input-group-text" id="inputGroup-sizing-sm">Mag er</span>
+  			
+  			<input type="text" value="{{prf.prf_accuracy}}" name="prf_accuracy" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  			
+  			<span class="input-group-text" id="inputGroup-sizing-sm">cm naast zitten</span>
+		</div>
+
+		<!--stijl-->
+		<div class="form-floating mb-3">
+			<select class="form-select" id="floatingSelect" name="prf_style" aria-label="Floating label select example" style="width: 75%;">
+				<option value="Alle" {{prf.prf_style.Alle}}>Alle</option>
+				<option value="Perzisch">Perzisch</option>
+				<option value="Kaschmir">Kaschmir</option>
+				<option value="Chinees">Chinees</option>
+				<option selected hidden value="{{prf.prf_style}}">{{prf.prf_style}}</option>
+			</select>
+			<label for="floatingSelect">Kies uw stijl</label>
+		</div>
+
+		<!--materiaal-->
+		<div class="form-floating mb-3">
+			<select class="form-select" id="floatingSelect" name="prf_material" aria-label="Floating label select example" style="width: 75%;">
+				<option value="Alle">Alle</option>
+				<option value="Wol">Wol</option>
+				<option value="Zijde">Zijde</option>
+				<option selected hidden value="{{prf.prf_material}}">{{prf.prf_material}}</option>
+			</select>
+			<label for="floatingSelect">Kies de materiaal</label>
+		</div>
+
+		<button class="btn btn-primary" type="submit">Zoek</button>
+
+	</form>
+	{{aap}}
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "320px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+{% endblock %}
