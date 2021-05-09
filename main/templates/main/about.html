@@ -1,0 +1,79 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<head>
+    <link href="{% static 'npt/assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/assets/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+<section id="about" class="about">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Over Ons</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="container-content">
+      <div class="row ms-4">
+        <div class="col-lg-6 order-1 order-lg-2">
+            <figure>
+                <img src="{% static 'npt/assets/img/about.jpg' %}" class="img-fluid" alt="">
+                <!--<img src="C:/Users/Armani/Documents/Green/Green/assets/img/about.jpg" class="img-fluid mt-4" alt="">
+                <figcaption> hello </figcaption>-->
+            </figure>
+        </div>
+        
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <h3 class="pt-3">Over NPT</h3>
+          <p class="fst-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+          </p>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+        </div>
+      </div>
+
+      <div class="row ms-4">
+          <div class="col-lg-6">
+            <img src="{% static 'npt/assets/img/about.jpg' %}" class="img-fluid mt-4" alt="">
+            <figcaption> <i> NPT in het Groothandelsgebouw </i> </figcaption>
+          </div>
+
+          <div class="col-lg-6 pt-4 content">
+            <h3>Oprichting</h3>
+            <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+
+      </div>
+
+      </div>
+
+    </div>
+  </section><!-- End About Us Section -->
+  </body>
+
+  {% endblock %}

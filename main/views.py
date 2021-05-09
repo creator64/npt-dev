@@ -32,3 +32,6 @@ def contact(response):
 		return render(response, "main/contact.html", {"actdict": {"contact": "active"}, "state": state}) 
 	else:
 		return render(response, "main/contact.html", {"actdict": {"contact": "active"}}) 
+
+def about(response):
+	return render(response, "main/about.html", {"actdict": {"about": "active"}}) 
