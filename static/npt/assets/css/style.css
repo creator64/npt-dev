@@ -535,6 +535,7 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+  padding-top: 10px;
 }
 
 .section-title h2 {
@@ -544,7 +545,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: rgb(42, 107, 116);
+  color: #4c7397;
 }
 
 .section-title h2::before {
@@ -626,7 +627,8 @@ section {
 
 
 .about{
-  background-color: rgb(255, 255, 255);
+  background-color: white;
+  color: rgb(0, 0, 0);
 }
 
 .about .content {
@@ -664,8 +666,9 @@ section {
 }  uncomment when need to see the container
 */
 
-.about .container-fluid{
+.about .section-title{
   padding: 0 30px;
+  padding-bottom: 20px;
 }
 
 

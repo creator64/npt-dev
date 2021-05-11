@@ -7,11 +7,17 @@
 {% block content %}
 
 <head>
-  <link rel="stylesheet" href="{% static 'main/css js/nicepage.css' %}" media="screen">
+  <!--<link rel="stylesheet" href="{% static 'main/css js/nicepage.css' %}" media="screen">-->
+  <link href="{% static 'npt/assets/css/style.css' %}" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'collection/css js/Collection.css' %}" media="screen">
 </head>
 
 {% include 'collection/sideform.html' %}
+
+<div class="section-title">
+  <h2>Onze Collectie</h2>
+  <p class="desc">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+</div>
 
 <div id="main">
   <button class="openbtn" onclick="openNav()">☰ Sorteer</button>
