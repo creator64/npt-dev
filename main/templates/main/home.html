@@ -7,20 +7,20 @@
 {% block content %}
 
   <head>
+    {% block link %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="over">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <link rel="stylesheet" href="{% static 'main/css js/nicepage.css' %}" media="screen">
-<link rel="stylesheet" href="{% static 'main/css js/Home.css' %}" media="screen">
-    <script class="u-script" type="text/javascript" src="{% static 'main/css js/jquery.js' %}" defer=""></script>
-    <script class="u-script" type="text/javascript" src="{% static 'main/css js/nicepage.js' %}" defer=""></script>
+    <link rel="stylesheet" href="{% static 'npt/mainfiles/nicepage.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'npt/mainfiles/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'npt/mainfiles/nicepage.js' %}" defer=""></script>
+    <link rel="stylesheet" href="{% static 'npt/css/Home.css' %}" media="screen">
     <meta name="generator" content="Nicepage 3.12.1, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Modak:400">
-    
-    
+    {% endblock %}
     
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
@@ -47,7 +47,7 @@
       </div>
     </section>-->
     <section class="u-clearfix u-video u-video-contain u-section-3" id="sec-cd86">
-    <video controls src="{% static 'main/videos/Film Tapijt Red.MP4' %}" autoplay muted loop style="
+    <video controls src="{% static 'npt/videos/Film Tapijt Red.MP4' %}" autoplay muted loop style="
     position: relative;
     width: 100%;
     max-width: 100%;

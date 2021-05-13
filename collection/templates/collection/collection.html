@@ -4,101 +4,109 @@
 
 {% block title %} npt - collectie {% endblock %}
 
+{% block secttitle %} Collectie {% endblock %}
+{% block sectdesc %} Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.{% endblock %}
+
 {% block content %}
 
 <head>
-  <!--<link rel="stylesheet" href="{% static 'main/css js/nicepage.css' %}" media="screen">-->
-  <link href="{% static 'npt/assets/css/style.css' %}" rel="stylesheet">
-  <link rel="stylesheet" href="{% static 'collection/css js/Collection.css' %}" media="screen">
+  <!--<link rel="stylesheet" href="{% static 'npt/mainfiles/nicepage.css' %}" media="screen">-->
+  <link href="{% static 'npt/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'npt/mainfiles/style.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'npt/css/Collection.css' %}" media="screen">
 </head>
 
 {% include 'collection/sideform.html' %}
 
-<div class="section-title">
-  <h2>Onze Collectie</h2>
-  <p class="desc">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-</div>
+<section id="collection" class="collection">
 
-<div id="main">
-  <button class="openbtn" onclick="openNav()">☰ Sorteer</button>
-</div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Sorteer</button>
+  </div>
 
-<div class="container mt-5 mb-5 ">
-  <div class="row mx-5">
+  <div class="container mt-5 mb-5 ">
+    <div class="row mx-5">
 
-    {% for carpet in carpets %}
+      {% for carpet in carpets %}
 
-    <div class="col-lg-6 my-3">
-      <div class="card">
-        <div class="inner-card"> 
-          <div class="card-image">
-            <a href="bekijkId={{carpet.id|add:'102345'}}" id="copy_info">
-              <img class="card-img-top img-fluid rounded" src="{{carpet.image.url}}" alt="Card image cap" style="height: 29rem;">
-              <div class="image-overlay">
-                <div class="text">Echt handgeknoopt tapijt</div>
-              </div>
-            </a>
-          </div>
+      <div class="col-lg-6 my-3">
+        <div class="card">
+          <div class="inner-card"> 
+            <div class="card-image">
+              <a href="bekijkId={{carpet.id|add:'102345'}}" id="copy_info">
+                <img class="card-img-top img-fluid rounded" src="{{carpet.image.url}}" alt="Card image cap" style="height: 29rem;">
+                <div class="image-overlay">
+                  <div class="text">Echt handgeknoopt tapijt</div>
+                </div>
+              </a>
+            </div>
 
-          <div class="px-2 text-center">
-            <h4> {{carpet.description}} </h4>
-          </div>
-          <!--<div class="px-2 text-center"> <small>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</small> </div>-->
-          <div class="px-2 text-center">
-              <h5>{{carpet.width}}x{{carpet.height}}</h5>
-          </div>
-          <div class="px-2 text-center"> 
-            <a href="bekijkId={{carpet.id|add:'102345'}}" id="copy_info">
-              <button class="btn btn-outline-primary px-3">Bekijk Details</button>
-            </a>
+            <div class="px-2 text-center">
+              <h4> {{carpet.description}} </h4>
+            </div>
+            <!--<div class="px-2 text-center"> <small>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</small> </div>-->
+            <div class="px-2 text-center">
+                <h5>{{carpet.width}}x{{carpet.height}}</h5>
+            </div>
+            <div class="px-2 text-center"> 
+              <a href="bekijkId={{carpet.id|add:'102345'}}" id="copy_info">
+                <button class="btn btn-outline-primary px-3">Bekijk Details</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    {% endfor %}
+      {% endfor %}
 
-  
-</div>
-</div>
+    
+  </div>
+  </div>
 
-<!-- pagination -->
-<div class="d-flex justify-content-center">
-<nav aria-label="...">
-  <ul class="pagination pagination-lg">
-    {% if carpets.has_previous %}
-      <li class="page-item">
-        <a class="page-link" id="copy_info" charset="page" href="?page={{ carpets.previous_page_number }}">Vorige</a>
-      </li>
-
-    {% else %}
-    <li class="page-item disabled"> <a class="page-link">Vorige</a> </li>
-    {% endif %}
-
-    {% for pn in range_pages %}
-      {% if carpets.number == pn %}
-        <li class="page-item active">
-          <a class="page-link" id="copy_info" charset="page" href="?page={{ pn }}">{{pn}}</a>
-        </li>
-      {% else %}
+  <!-- pagination -->
+  <div class="d-flex justify-content-center">
+  <nav aria-label="...">
+    <ul class="pagination pagination-lg">
+      {% if carpets.has_previous %}
         <li class="page-item">
-          <a class="page-link" id="copy_info" charset="page" href="?page={{ pn }}">{{pn}}</a>
+          <a class="page-link" id="copy_info" charset="page" href="?page={{ carpets.previous_page_number }}">Vorige</a>
         </li>
+
+      {% else %}
+      <li class="page-item disabled"> <a class="page-link">Vorige</a> </li>
       {% endif %}
-    {% endfor %}
 
-    {% if carpets.has_next %}
-      <li class="page-item">
-        <a class="page-link" id="copy_info" charset="page" href="?page={{ carpets.next_page_number }}">Volgende</a>
-      </li>
+      {% for pn in range_pages %}
+        {% if carpets.number == pn %}
+          <li class="page-item active">
+            <a class="page-link" id="copy_info" charset="page" href="?page={{ pn }}">{{pn}}</a>
+          </li>
+        {% else %}
+          <li class="page-item">
+            <a class="page-link" id="copy_info" charset="page" href="?page={{ pn }}">{{pn}}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
 
-    {% else %}
-    <li class="page-item disabled"> <a class="page-link">Volgende</a> </li>
-    {% endif %}
-  </ul>
-</nav>
-</div>
-<!-- pagination -->
+      {% if carpets.has_next %}
+        <li class="page-item">
+          <a class="page-link" id="copy_info" charset="page" href="?page={{ carpets.next_page_number }}">Volgende</a>
+        </li>
+
+      {% else %}
+      <li class="page-item disabled"> <a class="page-link">Volgende</a> </li>
+      {% endif %}
+    </ul>
+  </nav>
+  </div>
+  <!-- pagination -->
+
+</section>
 
 
 {% endblock %}

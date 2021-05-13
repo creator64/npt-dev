@@ -524,9 +524,6 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
-  padding: 40px 0;
-}
 
 .section-bg {
   background-color: #f8fcf9;
@@ -534,11 +531,12 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
-  padding-top: 10px;
+  padding: 0px 30px;
+  padding-bottom: 20px;
+  padding-top: 50px;
 }
 
-.section-title h2 {
+.section-title .title {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
@@ -548,7 +546,7 @@ section {
   color: #4c7397;
 }
 
-.section-title h2::before {
+.section-title .title::before {
   content: '';
   position: absolute;
   display: block;
@@ -559,7 +557,7 @@ section {
   left: calc(50% - 60px);
 }
 
-.section-title h2::after {
+.section-title .title::after {
   content: '';
   position: absolute;
   display: block;
@@ -570,11 +568,17 @@ section {
   left: calc(50% - 20px);
 }
 
-.section-title p {
+.section-title .desc {
   margin-bottom: 0;
   font-size: 17px;
   color: #336699;
-  font-weight: 500;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .section-title .desc{
+    padding: 0 60px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -621,62 +625,7 @@ section {
   font-size: 14px;
 }
 
-/*--------------------------------------------------------------
-# About Us
---------------------------------------------------------------*/
 
-
-.about{
-  background-color: white;
-  color: rgb(0, 0, 0);
-}
-
-.about .content {
-  font-weight: 600;
-}
-
-.about .content h3 {
-  font-weight: 700;
-  font-size: 28px;
-}
-
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  padding-bottom: 10px;
-}
-
-.about .content ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #5cb2b8;
-}
-
-.about .content p:last-child {
-  margin-bottom: 10;
-}
-
-/* The whole container without the section title */
-/*.container-content{
-  background-color: rgb(239, 242, 247);
-  box-shadow: 0 0 5px #000000;
-}  uncomment when need to see the container
-*/
-
-.about .section-title{
-  padding: 0 30px;
-  padding-bottom: 20px;
-}
-
-
-@media (min-width: 768px) {
-  .about .desc{
-    padding: 0 60px;
-  }
-}
 
 
 /*--------------------------------------------------------------

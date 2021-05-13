@@ -2,34 +2,33 @@
 
 {% load static %}
 
+{% block secttitle %} Over Ons {% endblock %}
+{% block sectdesc %} Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.{% endblock %}
+
 {% block content %}
 
 <head>
-    <link href="{% static 'npt/assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
-    <link href="{% static 'npt/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'npt/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-    <link href="{% static 'npt/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-    <link href="{% static 'npt/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
-    <link href="{% static 'npt/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
-    <link href="{% static 'npt/assets/css/style.css' %}" rel="stylesheet">
+  {% block link %}
+    <link href="{% static 'npt/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/mainfiles/style.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/css/About.css' %}" rel="stylesheet">
+  {% endblock %}
 </head>
 
 <body>
 <section id="about" class="about">
     <div class="container-fluid">
 
-      <div class="section-title">
-        <h2>Over Ons</h2>
-        <p class="desc">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div>
-
       <div class="container-content">
       <div class="row ms-4">
         <div class="col-lg-6 order-1 order-lg-2">
             <figure>
-                <img src="{% static 'npt/assets/img/about.jpg' %}" class="img-fluid" alt="">
-                <!--<img src="C:/Users/Armani/Documents/Green/Green/assets/img/about.jpg" class="img-fluid mt-4" alt="">
-                <figcaption> hello </figcaption>-->
+                <img src="{% static 'npt/images/about.jpg' %}" class="img-fluid" alt="">
             </figure>
         </div>
         
@@ -55,7 +54,7 @@
 
       <div class="row ms-4">
           <div class="col-lg-6">
-            <img src="{% static 'main/images/storeold.jpg' %}" class="img-fluid mt-4" alt="">
+            <img src="{% static 'npt/images/storeold.jpg' %}" class="img-fluid mt-4" alt="">
             <figcaption> <i> NPT in het Groothandelsgebouw </i> </figcaption>
           </div>
 
