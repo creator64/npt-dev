@@ -15,6 +15,10 @@
   margin: 0 20px;
 }
 
+.u-section-3{
+  padding-bottom: 0px!important;
+}
+
 @media (max-width: 1199px) {
   .u-section-1 .u-text-1 {
     width: auto;
@@ -126,7 +130,7 @@
 }
 
 .u-section-4 .u-layout-wrap-1 {
-  margin-top: 5px;
+  margin-top: 0px;
   margin-bottom: 60px;
 }
 
