@@ -27,12 +27,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-button{
+.buttonround{
   background: #2d5f80;
+  color: #fff;
   transition: 0.4s;
+  border: 0;
+  padding: 10px 24px;
+  border-radius: 7px;
 }
 
-button:hover{
+.buttonround:hover{
   background: #3f7aa1;
 }
 

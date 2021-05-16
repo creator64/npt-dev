@@ -1,6 +1,13 @@
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+.contact{
+  font-family: Raleway, sans-serif;
+}
+
 .contact .info {
     border-top: 3px solid #415f85;
     border-bottom: 3px solid #415f85;
@@ -71,6 +78,10 @@
     background: #82928f;
     color: red;
   } activate when want to change colour on hover */
+
+  .contact .email-form{
+    margin-bottom: 50px;
+  }
   
   .contact .php-email-form {
     width: 100%;
@@ -78,7 +89,7 @@
     border-bottom: 3px solid #415f85;
     padding: 30px;
     background: #fff;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 24px 0 rgb(158, 151, 151);
   }
   
   .contact .php-email-form .form-group {
@@ -128,32 +139,27 @@
   }
   
   .contact .php-email-form input, .contact .php-email-form textarea {
-    border-radius: 0;
     box-shadow: none;
     font-size: 14px;
-    border-radius: 4px;
+    border-radius: 6px;
   }
   
   .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-    border-color: #242580;
+    border-color: #415f85;
   }
   
   .contact .php-email-form input {
-    height: 44px;
+    height: 35px;
+  }
+
+  .contact .php-email-form .form-control{
+    color: black;
+    font-family: cursive;
   }
   
   .contact .php-email-form textarea {
     padding: 10px 12px;
   }
-  
-  .contact .php-email-form button[type="submit"] {
-    border: 0;
-    padding: 10px 24px;
-    color: #fff;
-    border-radius: 4px;
-  }
-  
-  
   
   .contact .email-section-title{
     color: rgb(4, 5, 41);
