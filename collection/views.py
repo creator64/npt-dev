@@ -52,5 +52,5 @@ def collection(response):
 def view(response, id):
 	id = id - 102345
 	carpet  = Carpet.objects.get(id=id)
-	return render(response, "collection/view.html", {"actdict": {"collec": "active",},
+	return render(response, "collection/view2.html", {"actdict": {"collec": "active",},
 													 "carpet": carpet})

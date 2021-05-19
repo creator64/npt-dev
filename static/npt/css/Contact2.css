@@ -15,6 +15,7 @@
     background: #fff;
     width: 100%;
     box-shadow: 0 0 24px 0 rgb(158, 151, 151);
+    margin: 0;
   }
   
   .contact .container {
@@ -66,7 +67,6 @@
     width: 36px;
     height: 36px;
     transition: 0.3s;
-    margin-right: 10px;
   }
   
   /*.contact .info .social-links a:hover {
@@ -154,7 +154,7 @@
 
   .contact .php-email-form .form-control{
     color: black;
-    font-family: cursive;
+    font-family: sans-serif;
   }
   
   .contact .php-email-form textarea {

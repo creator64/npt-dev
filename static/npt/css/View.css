@@ -1,0 +1,66 @@
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.carpet-details-section {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.carpet-details-section .carpet-details-slider img {
+  width: 100%;
+  height: 40rem;
+}
+
+.carpet-details-section .carpet-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.carpet-details-section .carpet-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #5cb874;
+}
+
+.carpet-details-section .carpet-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #5cb874;
+}
+
+.carpet-details-section .carpet-details {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(34, 34, 34, 0.2);
+}
+
+.carpet-details-section .carpet-details .title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(79, 165, 180);
+}
+
+.carpet-details-section .carpet-details .body {
+  list-style: none;
+  padding: 0;
+  font-size: 22px;
+}
+
+.carpet-details-section .carpet-details .body li + li {
+  margin-top: 10px;
+}
+
+.carpet-details-section .carpet-description {
+  padding-top: 30px;
+}
+
+.carpet-details-section .carpet-description .title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.carpet-details-section .carpet-description .body {
+  padding: 0;
+}
