@@ -22,16 +22,16 @@ def contact(response):
 				  message,
 				  sender_email,
 				  [EMAIL_HOST_USER],
-				  fail_silently=False)
+				  fail_silently=True)
 
 		if bool(sent_mail):
 			state = "success"
 		else:
 			state = "failure"
 
-		return render(response, "main/contact2.html", {"actdict": {"contact": "active"}, "state": state}) 
+		return render(response, "main/contact.html", {"actdict": {"contact": "active"}, "state": state}) 
 	else:
-		return render(response, "main/contact2.html", {"actdict": {"contact": "active"}}) 
+		return render(response, "main/contact.html", {"actdict": {"contact": "active"}}) 
 
 def about(response):
 	return render(response, "main/about.html", {"actdict": {"about": "active"}}) 

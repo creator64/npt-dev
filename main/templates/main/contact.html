@@ -14,7 +14,7 @@ Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi 
     <link href="{% static 'npt/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
     <link href="{% static 'npt/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
     <link href="{% static 'npt/mainfiles/style.css' %}" rel="stylesheet">
-    <link href="{% static 'npt/css/Contact2.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/css/Contact.css' %}" rel="stylesheet">
   {% endblock %}
 
   {% block title %} npt - contact {% endblock %}
@@ -29,8 +29,8 @@ Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi 
           <div class="col-lg-6 align-items-stretch">
             <div class="address">
               <i class="bi bi-geo-alt"></i>
-              <h4 class="info-title">Location:</h4>
-              <p class="info-body">A1 08 Adam Street, New York, NY 535022</p>
+              <h4 class="info-title">Locatie:</h4>
+              <p class="info-body">Oostzeedijk Beneden 31 Rotterdam</p>
             </div>
           </div>
 
@@ -38,23 +38,23 @@ Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi 
             <div class="email">
               <i class="bi bi-envelope"></i>
               <h4 class="info-title">Email:</h4>
-              <p  class="info-body">info@example.com</p>
+              <p  class="info-body">nptrotterdam@gmail.com</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="phone">
               <i class="bi bi-phone"></i>
-              <h4 class="info-title">Call:</h4>
-              <p  class="info-body">+1 5589 55488 55s</p>
+              <h4 class="info-title">Bel Ons:</h4>
+              <p  class="info-body">+31 6 00 00 00 00</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="phone">
-              <i class="bi bi-phone"></i>
-              <h4 class="info-title">Call:</h4>
-              <p  class="info-body">+1 5589 55488 55s</p>
+              <i class="bi bi-door-open"></i>
+              <h4 class="info-title">Openingstijden:</h4>
+              <p  class="info-body">ma t/m za 12:00 - 18:00</p>
             </div>
           </div>
 
@@ -74,30 +74,39 @@ Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi 
       
       <div class="row email-form">
         <div class="col-lg mt-3 d-flex align-items-stretch">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form" id="email">
+          <form action="/contact/#state" method="post"  class="php-email-form" id="email">
+            {% csrf_token %}
             <div class="row">
               <div class="form-group col-md-6">
-                <label for="name">Your Name</label>
+                <label for="name">Naam</label>
                 <input type="text" name="name" class="form-control" id="name" placeholder="Voer hier uw naam in (niet verplicht)">
               </div>
               <div class="form-group col-md-6 mt-3 mt-md-0">
-                <label for="name">Your Email</label>
+                <label for="name">Email</label>
                 <input type="email" class="form-control" name="email" id="email" placeholder="Voer hier uw email-adres in" required>
               </div>
             </div>
             <div class="form-group mt-3">
-              <label for="name">Subject</label>
+              <label for="name">Onderwerp</label>
               <input type="text" class="form-control" name="subject" id="subject" placeholder="Voer hier het onderwerp in" required>
             </div>
             <div class="form-group mt-3">
-              <label for="name">Message</label>
+              <label for="name">Bericht</label>
               <textarea class="form-control" name="message" rows="10" placeholder="Typ hier uw bericht" required></textarea>
             </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+            <div class="my-3" id="state">
+            {% if state == None %}
+            {% elif state == "failure" %}
+              <div class="error-message">
+                Het spijt ons, uw email kon helaas niet worden verstuurd door een onbekende fout.
+                Probeer het later opnieuw.
+              </div>
+            {% elif state == "success" %}
+              <div class="sent-message"> Uw email is verstuurd. Bedankt voor uw bericht!</div>
+            {% endif %}
             </div>
+            
             <div class="text-center"><button class="buttonround" type="submit">Stuur Bericht</button></div>
           </form>
         </div>
@@ -110,7 +119,7 @@ Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi 
   <script src="{% static 'npt/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'npt/vendor/glightbox/js/glightbox.min.js' %}"></script>
   <script src="{% static 'npt/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-  <script src="{% static 'npt/vendor/php-email-form/validate.js' %}"></script>
+ <!-- <script src="{% static 'npt/vendor/php-email-form/validate.js' %}"></script>-->
   <script src="{% static 'npt/vendor/swiper/swiper-bundle.min.js' %}"></script>
 
   <!-- Template Main JS File -->

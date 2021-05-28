@@ -14,7 +14,7 @@ def size_ok(carpet, prf):
 	except:
 		return True
 
-	req_acc = int(prf["prf_accuracy"]) 
+	req_acc = int(prf["prf_accuracy"])
 
 	#first check normally
 	if carpet.width >= (req_width -  req_acc) and carpet.width <= (req_width + req_acc):

@@ -30,13 +30,13 @@
   </div>
 
   <div class="container mt-5 mb-5 ">
-    <div class="row mx-5">
+    <div class="row carpets mx-5">
 
       {% for carpet in carpets %}
 
       <div class="col-lg-6 my-3">
         <div class="card">
-          <div class="inner-card"> 
+          <div class="inner-card">
             <div class="card-image">
               <a href="bekijkId={{carpet.id|add:'102345'}}" id="copy_info">
                 <img class="card-img-top img-fluid rounded" src="{{carpet.image.url}}" alt="Card image cap" style="height: 29rem;">
@@ -53,7 +53,7 @@
             <div class="px-2 text-center">
                 <h5>{{carpet.width}}x{{carpet.height}}</h5>
             </div>
-            <div class="px-2 text-center"> 
+            <div class="px-2 text-center">
               <a href="bekijkId={{carpet.id|add:'102345'}}" id="copy_info">
                 <button class="buttonround px-3">Bekijk Details</button>
               </a>
@@ -64,7 +64,7 @@
 
       {% endfor %}
 
-    
+
   </div>
   </div>
 

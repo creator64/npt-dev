@@ -63,3 +63,8 @@ body {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
   }
+
+  @media (max-width: 767px){
+  .collection .carpets{
+      margin: 0px!important;
+  }
