@@ -2,12 +2,6 @@
 # Contact
 --------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
-
-.contact{
-  font-family: Raleway, sans-serif;
-}
-
 .contact .info {
     border-top: 3px solid #415f85;
     border-bottom: 3px solid #415f85;
