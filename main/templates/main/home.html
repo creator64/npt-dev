@@ -17,10 +17,12 @@
 </head>
 
 {% block content %}
+<section class="intro-video">
 <video controls  type="video/mp4" src="{% static 'npt/videos/Film Tapijt red.mp4' %}" autoplay muted loop style="
     position: relative;
     width: 100%;
     height: auto;"></video>
+</section>
 
  <!-- ======= Cta Section ======= -->
  <section id="cta" class="cta">
@@ -38,7 +40,7 @@
               Wij bieden u ook deskundig advies over geschikte kleden voor alle soorten inrichtingen.</p>
         </div>
         <div class="col-lg-3 cta-btn-container text-center">
-          <a class="cta-btn align-middle" href="#">Bekijk Onze Collectie</a>
+          <a class="cta-btn align-middle" href="/collection">Bekijk Onze Collectie</a>
         </div>
       </div>
 
@@ -48,28 +50,39 @@
   <!-- ======= Featured Services Section ======= -->
   <section id="featured-services" class="featured-services section-bg">
     <div class="container">
-
       <div class="row no-gutters">
-        <div class="col-lg-4 col-md-6">
-          <div class="icon-box">
-            <div class="icon"><i class="bi bi-laptop"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+
+        <div class="col-lg-4 col-md-6 feature">
+
+          <div class="d-flex flex-row icon-box">
+            <div class="d-flex align-items-center icon"> <i class="fas fa-home"> </i> </div>
+            <div class="title d-flex align-items-center">Probeer Thuis</div>
           </div>
+
+          <p class="description">Bij NPT kunt u tapijten die u mooi vindt eerst zelf mee naar huis nemen en uitproberen voordat u ze koopt. 
+            In de huiskamer kunnen ze er anders uitzien dan in de winkel</p>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="icon-box">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+
+        <div class="col-lg-4 col-md-6 feature">
+
+          <div class="d-flex flex-row icon-box">
+            <div class="d-flex align-items-center icon"> <i class="fas fa-exchange-alt"> </i> </div>
+            <div class="title d-flex align-items-center">Inruilen Mogelijk</div>
           </div>
+
+          <p class="description">Heeft u zelf tapijten waar u van af wil? Dat komt mooi uit.
+            Bij NPT kunt u uw oude tapijten inruilen en flinke korting krijgen op een nieuwe</p>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="icon-box">
-            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trade stravi</p>
+
+        <div class="col-lg-4 col-md-6 feature">
+
+          <div class="d-flex flex-row icon-box">
+            <div class="d-flex align-items-center icon"> <i class="fas fa-hands-helping"> </i> </div>
+            <div class="title d-flex align-items-center">Advies</div>
           </div>
+
+          <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+             fugiat nulla pariatur trade stravi</p>
         </div>
       </div>
 

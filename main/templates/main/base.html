@@ -35,6 +35,7 @@
 <!--javascript for copying info (prf and page) in collection when going to another page or view a carpet-->
 <script type="text/javascript">
 
+	// copyinfo class (links)
 	function copy_info(exceptions) {
 		var output = "?"
 		var url = window.location.href;
@@ -54,6 +55,18 @@
 		}
 
 		return ""
+	}
+
+	// newtab class (links)
+	window.onload = function()
+	{
+		var allLinks = document.getElementsByClassName("newtab");
+		for(var i=0;i<allLinks.length;i++)
+		{
+			var currentLink = allLinks[i];
+			currentLink.setAttribute("target","_blank");
+			currentLink.setAttribute("rel", "noopener noreferrer")
+		}
 	}
 
 </script>

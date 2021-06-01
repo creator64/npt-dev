@@ -2,11 +2,18 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from npt.settings import EMAIL_HOST_USER
+from .feature import Feature
+
+# feature objects
+
+f1 = Feature()
+f2 = Feature()
+f3 = Feature()
 
 # Create your views here.
 
 def home(response):
-	return render(response, "main/home.html", {"actdict": {"home": "active"}}) 
+	return render(response, "main/home.html", {"actdict": {"home": "active"},}) 
 
 def contact(response):
 	data = response.POST
