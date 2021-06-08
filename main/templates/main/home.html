@@ -18,10 +18,12 @@
 
 {% block content %}
 <section class="intro-video">
-<video controls  type="video/mp4" src="{% static 'npt/videos/Film Tapijt red.mp4' %}" autoplay muted loop style="
+    <video loop muted playsinline controls class="video-background" style="
     position: relative;
     width: 100%;
-    height: auto;"></video>
+    height: auto;">
+      <source src="{% static 'npt/videos/Film Tapijt red new.mov' %}" type="video/mp4">
+    </video>
 </section>
 
  <!-- ======= Cta Section ======= -->
@@ -47,46 +49,25 @@
     </div>
   </section><!-- End Cta Section -->
 
-  <!-- ======= Featured Services Section ======= -->
-  <section id="featured-services" class="featured-services section-bg">
-    <div class="container">
-      <div class="row no-gutters">
+<section id="featured-services" class="featured-services section-bg">
 
-        <div class="col-lg-4 col-md-6 feature">
-
-          <div class="d-flex flex-row icon-box">
-            <div class="d-flex align-items-center icon"> <i class="fas fa-home"> </i> </div>
-            <div class="title d-flex align-items-center">Probeer Thuis</div>
-          </div>
-
-          <p class="description">Bij NPT kunt u tapijten die u mooi vindt eerst zelf mee naar huis nemen en uitproberen voordat u ze koopt. 
-            In de huiskamer kunnen ze er anders uitzien dan in de winkel</p>
-        </div>
-
-        <div class="col-lg-4 col-md-6 feature">
+<div class="container">
+  <div class="row no-gutters">
+    {% for feature in features %}
+      <div class="col-lg-4 col-md-6 feature">
 
           <div class="d-flex flex-row icon-box">
-            <div class="d-flex align-items-center icon"> <i class="fas fa-exchange-alt"> </i> </div>
-            <div class="title d-flex align-items-center">Inruilen Mogelijk</div>
+            <div class="d-flex align-items-center icon"> <i class="{{feature.icon}}"> </i> </div>
+            <div class="title d-flex align-items-center"> {{feature.title}} </div>
           </div>
 
-          <p class="description">Heeft u zelf tapijten waar u van af wil? Dat komt mooi uit.
-            Bij NPT kunt u uw oude tapijten inruilen en flinke korting krijgen op een nieuwe</p>
-        </div>
-
-        <div class="col-lg-4 col-md-6 feature">
-
-          <div class="d-flex flex-row icon-box">
-            <div class="d-flex align-items-center icon"> <i class="fas fa-hands-helping"> </i> </div>
-            <div class="title d-flex align-items-center">Advies</div>
-          </div>
-
-          <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-             fugiat nulla pariatur trade stravi</p>
-        </div>
+          <p class="description"> {{feature.description}} </p>
       </div>
+    {% endfor %}
+  </div>
+</div>
 
-    </div>
-  </section><!-- End Featured Services Section -->
+</section>
+<!-- End Featured Services Section -->
 
 {% endblock %}

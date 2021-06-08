@@ -1,5 +1,5 @@
 class Feature:
-    def __init__(self, icon, title, description):
+    def __init__(self, title, description, icon="fab fa-python"):
         self.icon = icon
         self.title = title
         self.description = description

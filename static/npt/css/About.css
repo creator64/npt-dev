@@ -36,6 +36,13 @@
   .about .content p:last-child {
     margin-bottom: 10;
   }
+
+@media (max-width: 1024px){
+  .about .rowc{
+    margin-left: 0!important;
+  }
+}
+
   
   /* The whole container without the section title */
   /*.container-content{

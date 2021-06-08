@@ -4,16 +4,28 @@ from django.core.mail import send_mail
 from npt.settings import EMAIL_HOST_USER
 from .feature import Feature
 
-# feature objects
+# feature objects (home)
 
-f1 = Feature()
-f2 = Feature()
-f3 = Feature()
+f1 = Feature('Probeer Thuis', 
+			'''Bij NPT kunt u tapijten die u mooi vindt eerst zelf mee naar huis nemen en uitproberen voordat u ze koopt. 
+               In de huiskamer kunnen ze er anders uitzien dan in de winkel''',
+			   icon="fas fa-home")
+
+f2 = Feature('Inruilen Mogelijk',
+			'''Heeft u zelf tapijten waar u van af wil? Dat komt mooi uit.
+               Bij NPT kunt u uw oude tapijten inruilen en flinke korting krijgen op een nieuwe''',
+			   icon="fas fa-exchange-alt")
+
+
+f3 = Feature('Advies',
+			'''Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+             fugiat nulla pariatur trade stravi''',
+			 icon="fas fa-hands-helping")
 
 # Create your views here.
 
 def home(response):
-	return render(response, "main/home.html", {"actdict": {"home": "active"},}) 
+	return render(response, "main/home.html", {"actdict": {"home": "active"}, "features": [f1, f2, f3]}) 
 
 def contact(response):
 	data = response.POST
