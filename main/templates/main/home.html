@@ -17,14 +17,21 @@
 </head>
 
 {% block content %}
-<section class="intro-video">
-    <video loop muted playsinline controls class="video-background" style="
+
+<!--<section class="intro-video">
+    <video loop muted controls class="video-background" style="
     position: relative;
     width: 100%;
     height: auto;">
-      <source src="{% static 'npt/videos/Film Tapijt red new.mov' %}" type="video/mp4">
+      <source src="{% static 'npt/videos/Film Tapijt.mp4' %}" type="video/mp4">
     </video>
-</section>
+</section>-->
+
+<div class="intro-video-embed">
+  <iframe width="100%" height="100%" 
+  src="https://www.youtube.com/embed/u-EMUxb4bOU?mute=1&rel=0&autoplay=1&playsinline=1&loop=1&playlist=u-EMUxb4bOU" 
+  allowfullscreen  title="YouTube video player" style="border:0;"></iframe>
+</div>
 
  <!-- ======= Cta Section ======= -->
  <section id="cta" class="cta">
@@ -47,7 +54,7 @@
       </div>
 
     </div>
-  </section><!-- End Cta Section -->
+  </section><!-- End Cta Section --> 
 
 <section id="featured-services" class="featured-services section-bg">
 

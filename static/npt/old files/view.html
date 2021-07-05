@@ -1,0 +1,102 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block title %}npt{% endblock %}
+
+{% block content %}
+
+<head>
+	{% block link %}
+	<link href="{% static 'npt/mainfiles/style.css' %}" rel="stylesheet">
+	{% endblock %}
+	<style>
+		body {
+		background-color: #b5c5d5;
+		}
+	</style>
+</head>
+
+<div class="container py-5">
+<div class="card mb-3">
+	<div class="row g-0">
+		<div class="col-md-4">
+			<img src="{{carpet.image.url}}" class="rounded" style="max-height: 500px; width: 100%;">
+		</div>
+		<div class="col-md-8">
+			<div class="card-body ms-3">
+				<div class="container">
+
+					<div class="row fs-1">
+						<div class="col">
+							Maat
+	    				</div>
+					    <div class="col-7">
+					    	{{carpet.width}} X {{carpet.height}} cm
+					    </div>
+	    			</div>
+
+	    			<div class="row fs-1">
+						<div class="col">
+							Prijs
+	    				</div>
+					    <div class="col-7">
+					    	€{{carpet.price}}
+					    </div>
+	    			</div>
+
+	    			<div class="row fs-1">
+						<div class="col">
+							Origine
+	    				</div>
+					    <div class="col-7">
+					    	{{carpet.origin}}
+					    </div>
+	    			</div>
+
+	    			<div class="row fs-1">
+						<div class="col">
+							Stijl
+	    				</div>
+					    <div class="col-7">
+					    	{{carpet.style}}
+					    </div>
+	    			</div>
+
+	    			<div class="row fs-1">
+						<div class="col">
+							Materiaal
+	    				</div>
+					    <div class="col-7">
+					    	{{carpet.material}}
+					    </div>
+	    			</div>
+
+	    			<div class="row fs-1">
+						<div class="col">
+							Fijnheid
+	    				</div>
+					    <div class="col-7">
+					    	{{carpet.fineness}} knopen/m<sup>2</sup>
+					    </div>
+	    			</div>
+				</div>
+				<a  href="/collection" id="copy_info">
+					<div class="card-body">
+						<button class="buttonround mt-2" type="submit" name="form_info" value="{{prf}}">terug</button>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+	const Links = document.querySelectorAll('#copy_info')
+	Links.forEach(link =>{
+		link.href += copy_info([])
+	})
+</script>
+
+{% endblock %}
