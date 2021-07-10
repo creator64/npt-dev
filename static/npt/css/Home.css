@@ -2,8 +2,6 @@
 # Video
 --------------------------------------------------------------*/
 
-
-
 .intro-video{
   line-height: 0;
   border-bottom: 0px solid;
@@ -11,7 +9,7 @@
 
 .intro-video-embed {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 50%;
   /* 16:9 */
   padding-top: 25px;
   height: 0;
@@ -29,7 +27,7 @@
 # Cta
 --------------------------------------------------------------*/
 .cta {
-    background: #5a83a8;
+    background: #5e99e2;
     padding-top: 50px;
     padding-bottom: 65px;
     line-height: 1.8rem;

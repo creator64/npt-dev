@@ -5,6 +5,16 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/*
+#437FC7 (Darkest Blue)
+#6DAFFE (Lightest Blue)
+#EDF6FF (Light Gray)
+#FFFFFF (White)
+#B9732F (Brown)
+*/
+
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -90,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 !important;
 } 
 .navbar {   
-  background: #5a83a8;
+  background: #437FC7;  /*linear-gradient(#4988d6, #6DAFFE);*/
   padding-left: 20px;
   padding-right: 20px;
 }
