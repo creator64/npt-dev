@@ -13,6 +13,11 @@
 #B9732F (Brown)
 */
 
+:root {
+  --red: #800000;
+  --light-red: #cc1414;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -100,7 +105,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 !important;
 } 
 .navbar {   
-  background: #437FC7;  /*linear-gradient(#4988d6, #6DAFFE);*/
+  /*background: #437FC7;  /*linear-gradient(#4988d6, #6DAFFE);*/
+  background: var(--red);
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -131,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar .navbar-nav a.active, .navbar .navbar-nav a.active:hover {
   color: white !important;
-  background: #425465 !important;
+  background: var(--light-red) !important;
 }
 
 .navbar .nav-item i {
@@ -231,4 +237,9 @@ h1, h2, h3, h4, h5, h6 {
   .section-title .desc{
     padding: 0 60px;
   }
+}
+
+
+.page-footer{
+  background-color: var(--light-red);
 }

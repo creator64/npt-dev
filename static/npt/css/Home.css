@@ -27,7 +27,7 @@
 # Cta
 --------------------------------------------------------------*/
 .cta {
-    background: #5e99e2;
+    background: var(--light-red);
     padding-top: 50px;
     padding-bottom: 65px;
     line-height: 1.8rem;
@@ -106,7 +106,7 @@
 }
 
 .featured-services .icon {
-  color: #5ca3b8;
+  color: var(--light-red);
   font-size: 42px;
   margin-right: 15px;
 }
