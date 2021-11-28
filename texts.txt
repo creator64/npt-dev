@@ -1,0 +1,26 @@
+textvak:
+
+    NPT Handegeknoopte Oosterse Tapijten
+
+    Welkom bij NPT. Wij bieden u een ruim assortiment aan tapijten van allerlei soorten en maten aan. Dat doen wij al sinds 1974. 
+    Al onze tapijten zijn handgeknoopt en van uiterste kwaliteit. 
+    Wij bieden u ook deskundig advies over geschikte kleden voor alle soorten inrichtingen.
+
+
+Features:
+    F1:
+        Probeer Thuis
+
+        Bij NPT kunt u tapijten die u mooi vindt eerst zelf mee naar huis nemen en uitproberen voordat u ze koopt. 
+        In de huiskamer kunnen ze er anders uitzien dan in de winkel
+    
+    F2:
+        Inruilen Mogelijk
+
+        Heeft u zelf tapijten waar u van af wil? Dat komt mooi uit.
+        Bij NPT kunt u uw oude tapijten inruilen en flinke korting krijgen op een nieuwe
+    
+    F3:
+        Advies
+
+        Nog geen tekst

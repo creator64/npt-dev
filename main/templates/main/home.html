@@ -33,6 +33,29 @@
   allowfullscreen  title="YouTube video player" style="border:0;"></iframe>
 </div>
 
+<!-- Featured Services -->
+<section id="featured-services" class="featured-services section-bg">
+
+<div class="container">
+  <div class="row no-gutters">
+    {% for feature in features %}
+      <div class="col-lg-4 col-md-6 feature">
+
+          <div class="d-flex flex-row icon-box">
+            <div class="d-flex align-items-center icon"> <i class="{{feature.icon}}"> </i> </div>
+            <div class="title d-flex align-items-center"> {{feature.title}} </div>
+          </div>
+
+          <p class="description"> {{feature.description}} </p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+</section>
+<!-- End Featured Services Section -->
+
+
  <!-- ======= Cta Section ======= -->
  <section id="cta" class="cta">
     <div class="container">
@@ -55,26 +78,5 @@
 
     </div>
   </section><!-- End Cta Section --> 
-
-<section id="featured-services" class="featured-services section-bg">
-
-<div class="container">
-  <div class="row no-gutters">
-    {% for feature in features %}
-      <div class="col-lg-4 col-md-6 feature">
-
-          <div class="d-flex flex-row icon-box">
-            <div class="d-flex align-items-center icon"> <i class="{{feature.icon}}"> </i> </div>
-            <div class="title d-flex align-items-center"> {{feature.title}} </div>
-          </div>
-
-          <p class="description"> {{feature.description}} </p>
-      </div>
-    {% endfor %}
-  </div>
-</div>
-
-</section>
-<!-- End Featured Services Section -->
 
 {% endblock %}
