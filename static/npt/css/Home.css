@@ -31,7 +31,7 @@
     padding-top: 50px;
     padding-bottom: 65px;
     line-height: 1.8rem;
-    color: black;
+    color: white;
   }
   
   .cta .title {
@@ -114,11 +114,11 @@
 
 .featured-services .title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   color: #222222;
 }
 
 .featured-services .description {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
 }

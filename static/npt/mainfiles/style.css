@@ -11,20 +11,23 @@ rgba(59,0,0,.5) (grijsachtig)
 #E55137 (zalmrood)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
 :root {
-  --red: rgba(59, 0, 0, 0.5);
+  --red: #BA200D;
   --l-red: #f53131;
   --light-red: #fa3a3a;
   --red2: #d43c3cd5;
   --red-fade: rgba(102, 6, 6, 0.164);
-  --red-fade-2: rgba(167, 43, 43, 0.5);
+  --red-fade-2: rgba(211, 17, 17, 0.801); /* lekker opvallend */
 }
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Balsamiq Sans", sans-serif;
   color: #2c2a2a;
 }
 
@@ -41,13 +44,15 @@ a {
 }
 
 a:hover {
-  color: #fffa32;
+  /*color: #c4c10f;*/
   text-decoration: none;
+  text-decoration: underline;
+  color: var(--red);
 }
 
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
-}
+}*/
 
 .buttonround{
   background: #5c80b1;
@@ -202,7 +207,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #4c7397;
+  /*color: #4c7397;*/
+  color: var(--red-fade-2);
 }
 
 .section-title .title::before {
@@ -222,7 +228,8 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 40px;
   height: 3px;
-  background: #2674ce;
+  /*background: #2674ce;*/
+  background: var(--l-red);
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -230,7 +237,8 @@ h1, h2, h3, h4, h5, h6 {
 .section-title .desc {
   margin-bottom: 0;
   font-size: 17px;
-  color: #336699;
+  /*color: #336699;*/
+  color: black;
   font-weight: 400;
 }
 
