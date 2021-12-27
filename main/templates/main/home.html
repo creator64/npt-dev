@@ -34,87 +34,119 @@
   allowfullscreen  title="YouTube video player" style="border:0;"></iframe>
 </div>
 
-<!-- Featured Services -->
-<section id="featured-services" class="featured-services section-bg">
-
-<div class="container">
-  <div class="row no-gutters">
-    {% for feature in features %}
-      <div class="col-lg-4 col-md-6 feature">
-
-          <div class="d-flex flex-row icon-box">
-            <div class="d-flex align-items-center icon"> <i class="{{feature.icon}}"> </i> </div>
-            <div class="title d-flex align-items-center"> {{feature.title}} </div>
-          </div>
-
-          <p class="description"> {{feature.description}} </p>
-      </div>
-    {% endfor %}
-  </div>
-</div>
-
-</section>
-<!-- End Featured Services Section -->
-
-
- <!-- ======= Cta Section ======= --
- <section id="cta" class="cta">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-12 text-start">
-            <h3 class="title">NPT Handegeknoopte Oosterse Tapijten</h3>
-            <p class="body"> Welkom bij NPT. Wij bieden u een ruim assortiment aan tapijten van allerlei soorten en maten aan. Dat doen wij al sinds 1974. Al onze tapijten zijn handgeknoopt en van uiterste kwaliteit.
-                Wij bieden u ook deskundig advies over geschikte kleden voor alle soorten inrichtingen.</p>
-        </div>
-        
-        <div class="col-lg-9 text-start">
-          <p class="subtext"> Welkom bij NPT. Wij bieden u een ruim assortiment aan tapijten van allerlei soorten en maten aan. Dat doen wij al sinds 1974. Al onze tapijten zijn handgeknoopt en van uiterste kwaliteit.
-              Wij bieden u ook deskundig advies over geschikte kleden voor alle soorten inrichtingen.</p>
-        </div>
-        <div class="col-lg-3 cta-btn-container text-center">
-          <a class="cta-btn align-middle" href="/collection">Bekijk Onze Collectie</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- End Cta Section --> 
-
+  <!--<div class="col-lg-3 cta-btn-container text-center">
+    <a class="cta-btn align-middle" href="/collection">Bekijk Onze Collectie</a>
+  </div>-->
 
   <!-- ======= Cta Section ======= -->
  <section id="cta" class="cta">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-lg-8 text-start">
+  <div class="container pluralizex-4 ">
+    <!--<div class="row">
+      <div class="col-lg-7 text-start">
           <h3 class="title">NPT Handegeknoopte Oosterse Tapijten</h3>
           <p class="body"> Welkom bij NPT. Wij bieden u een ruim assortiment aan tapijten van allerlei soorten en maten aan. Dat doen wij al sinds 1974. Al onze tapijten zijn handgeknoopt en van uiterste kwaliteit.
               Wij bieden u ook deskundig advies over geschikte kleden voor alle soorten inrichtingen.</p>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-5">
         <img src="{% static 'npt/images/storeold.jpg' %}" class="img-fluid mt-4" width="500" height="600"></img>
       </div>
     </div>
+
+    <br><br>-->
 
     <div class="row">
-      <div class="col-lg-8 text-start">
-          <h3 class="title">NPT Handegeknoopte Oosterse Tapijten</h3>
-          <p class="body">
-            Welkom bij NPT. 
-            Wij hebben een groot assortiment handgeknoopte tapijten in afmetingen die geschikt zijn voor elk interieur. 
-            Al sinds 1974 verkoopt ons familiebedrijf de mooiste tapijten waarbij kwaliteit en duurzaamheid voorop staan. 
-            Onze tapijten zijn een investering voor een lange termijn vanwege de slijtvastheid en de unieke designs. 
-            NPT garandeert dat u een exclusief tapijt aanschaft en geen massafabrieksproduct. 
-            Daarom biedt A. Ayar van NPT u ook deskundig advies over type tapijten voor verschillende interieurs, zowel zakelijk als privé.
-          </p>
+      <div class="col-lg-5 ps-lg-0 text-start">
+        <h3 class="title">NPT Handegeknoopte Oosterse Tapijten</h3>
+        <p class="body">
+          Welkom bij NPT. 
+          Wij hebben een groot assortiment handgeknoopte tapijten in afmetingen die geschikt zijn voor elk interieur. 
+          Al sinds 1974 verkoopt ons familiebedrijf de mooiste tapijten waarbij kwaliteit en duurzaamheid voorop staan. 
+          Onze tapijten zijn een investering voor een lange termijn vanwege de slijtvastheid en de unieke designs. 
+        </p>
       </div>
-      <div class="col-lg-4">
-        <img src="{% static 'npt/images/storeold.jpg' %}" class="img-fluid mt-4" width="500" height="600"></img>
+      <div class="col-lg-7 trim ps-lg-5">
+        <img src="{% static 'npt/images/storeold.jpg' %}" class="img-fluid mx-auto"></img>
       </div>
     </div>
 
+    <div class="row mt-5 pt-5">
+      <div class="col-lg-5 ps-lg-0 text-start">
+        <h3 class="title">Uniciteit En Garantie</h3>
+        <p class="body">
+          NPT garandeert dat u een exclusief tapijt aanschaft en geen massafabrieksproduct. 
+          Daarom biedt A. Ayar van NPT u ook deskundig advies over type tapijten voor verschillende interieurs, zowel zakelijk als privé. 
+        </p>
+      </div>
+      <div class="col-lg-7 trim ps-lg-5">
+        <img src="{% static 'npt/images/carpet2.jpg' %}" class="img-fluid mx-auto"></img>
+      </div>
+    </div>
+
+    <div class="row mt-5 pt-5">
+      <div class="col-lg-5 ps-lg-0 text-start">
+        <h3 class="title">Vernieuwing</h3>
+        <p class="body">
+          NPT doet zijn uiterste best om de collectie te hernieuwen en net wat aan te passen. 
+          Zo zijn er bijvoorbeeld onder andere plannen om de collectie aan te vullen met andere interieursartikelen dan tapijten.
+        </p>
+      </div>
+      <div class="col-lg-7 trim ps-lg-5">
+        <img src="{% static 'npt/images/about.jpg' %}" class="img-fluid mx-auto"></img>
+      </div>
+    </div>
+
+    <div class="row mt-5 pt-5">
+      <div class="col-lg-5 ps-lg-0 text-start">
+        <h3 class="title">Contact</h3>
+        <p class="body">
+          Heeft u vragen? Aarzel dan niet! En bel ons naar 06 00 00 00 00 of <a href="/contact#email">stuur ons een email</a>. <br>
+          Kom langs bij de winkel! Wij zijn gevestigd op Oostzeedijk Beneden 31 Rotterdam.
+          Wij zijn maandag tot en met vrijdag geopend vanaf 12:00 tot 18:00 en op zaterdag vanaf 13:00 tot 18:00 behalve tijdens de Kerst en nieuwjaar.
+        </p>
+      </div>
+      <div class="col-lg-7 trim ps-lg-5">
+        <img src="{% static 'npt/images/about.jpg' %}" class="img-fluid mx-auto"></img>
+      </div>
+    </div>
+
+    <div class="row mt-5 pt-5">
+      <div class="col-lg-5 ps-lg-0 text-start">
+        <h3 class="title">Advies</h3>
+        <p class="body">
+          Het bedrijf NPT van de familie Ayar selecteert al sinds 1974 de hoogste kwaliteit Perzische tapijten 
+          uit het gebied tussen Afghanistan en Turkije. 
+          Zelf met Iraanse wortels, heeft de familie een grote kennis van tapijten voor zowel kleine als grote interieurs. 
+          Ayar adviseeert niet alleen over geschikte formaten maar ook over dessins die passen bij uw interieur.
+        </p>
+      </div>
+      <div class="col-lg-7 trim ps-lg-5">
+        <img src="{% static 'npt/images/carpet.jpg' %}" class="img-fluid mx-auto"></img>
+      </div>
+    </div>
   </div>
-</section><!-- End Cta Section --> 
+</section>
+<!-- End Cta Section --> 
+
+<!-- Featured Services -->
+<section id="featured-services" class="featured-services section-bg">
+
+  <div class="container">
+    <div class="row no-gutters">
+      {% for feature in features %}
+        <div class="col-lg-4 col-md-6 feature">
+  
+            <div class="d-flex flex-row icon-box">
+              <div class="d-flex align-items-center icon"> <i class="{{feature.icon}}"> </i> </div>
+              <div class="title d-flex align-items-center"> {{feature.title}} </div>
+            </div>
+  
+            <p class="description"> {{feature.description}} </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+  </section>
+  <!-- End Featured Services Section -->
 
 {% endblock %}

@@ -27,11 +27,12 @@
 # Cta
 --------------------------------------------------------------*/
 .cta {
-    background: var(--red-fade-2);
+    /*background: var(--red-fade-2);*/
+    /*background: #e91b1b42;*/
     padding-top: 50px;
     padding-bottom: 65px;
-    line-height: 1.8rem;
-    color: white;
+    line-height: 1.6rem;
+    color: black;
   }
   
   .cta .title {
@@ -39,11 +40,14 @@
     font-weight: 900;
     margin-bottom: 17px;
     font-size: 1.875rem;
+    color: var(--red);
+    font-style: italic;
   }
   
   .cta .body {
-    font-size: 1.4375rem;
-    margin-bottom: 35px;
+    font-size: 18px;
+    /*margin-bottom: 35px;*/
+    word-spacing: 6px;
   }
   
   .cta .subtext{
@@ -70,6 +74,13 @@
     background: #fff;
     color: #4c7397;
   }
+
+  .cta div.trim {
+    max-width: 700px;
+    max-height: 300px;
+    overflow: hidden;
+    display: block;
+  }
   
   @media (max-width: 1024px) {
     .cta {
@@ -91,7 +102,7 @@
 --------------------------------------------------------------*/
 .featured-services {
   padding: 20px 0;
-  background-color: var(--red-fade);
+  /*background-color: var(--red-fade);*/
 }
 
 .featured-services .feature {
