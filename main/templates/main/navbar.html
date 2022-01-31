@@ -10,11 +10,12 @@
 </head>
 
 
-<nav class="navbar navbar-expand-md navbar-dark py-3">
+<nav class="navbar navbar-expand-md navbar-dark py-2">
 
-  <a class="navbar-brand" href="#">
-    <img src="{% static 'npt/images/default-logo.png' %}" alt="" width="80" height="35">
-  </a>
+  <!-- logo -->
+  <!--<a class="navbar-brand" href="/">
+    <img src="{% static 'npt/images/logo.png' %}" alt="" width="200" height="100">
+  </a>-->
 
   <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
     <span class="navbar-toggler-icon"></span>
@@ -26,7 +27,8 @@
       <a href="/collection" class="nav-item nav-link {{actdict.collec}} text-white" id="copy_info">Collectie</a>    
       <a href="/about" class="nav-item nav-link {{actdict.about}} text-white" id="copy_info">Over Ons</a>
       <a href="/contact" class="nav-item nav-link {{actdict.contact}} text-white" id="copy_info">Contact</a>
-        </div>
+      <a href="/faq" class="nav-item nav-link {{actdict.faq}} text-white" id="copy_info">Faq</a>
+    </div>
     <div class="navbar-nav ml-auto">
       <a href="#" class="nav-item nav-link text-white"><i class="fa fa-facebook"></i></a>
       <a href="#" class="nav-item nav-link text-white"><i class="fa fa-twitter"></i></a>

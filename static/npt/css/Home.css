@@ -24,9 +24,9 @@
 }
 
 /*--------------------------------------------------------------
-# Cta
+# textbox
 --------------------------------------------------------------*/
-.cta {
+.textbox {
     /*background: var(--red-fade-2);*/
     /*background: #e91b1b42;*/
     padding-top: 50px;
@@ -35,28 +35,33 @@
     color: black;
   }
   
-  .cta .title {
-    font-size: 28px;
-    font-weight: 900;
+  .textbox .title {
+    font-weight: 800;
     margin-bottom: 17px;
-    font-size: 1.875rem;
+    font-size: 32px;
     color: var(--red);
     font-style: italic;
   }
-  
-  .cta .body {
-    font-size: 18px;
-    /*margin-bottom: 35px;*/
-    word-spacing: 6px;
+
+  .textbox .subtitle{
+    font-size: 20px;
+    font-weight: 400;
   }
   
-  .cta .subtext{
+  .textbox .body {
+    font-size: 16px;
+    /*margin-bottom: 35px;*/
+    word-spacing: 6px;
+    font-weight: 300;
+  }
+  
+  .textbox .subtext{
     font-size: 1rem;
     line-height: 1.3rem;
     display: flex;
   }
   
-  .cta .cta-btn {
+  .textbox .textbox-btn {
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -70,26 +75,26 @@
     border-radius: 4px;
   }
   
-  .cta .cta-btn:hover {
+  .textbox .textbox-btn:hover {
     background: #fff;
     color: #4c7397;
   }
 
-  .cta div.trim {
+  .textbox div.trim {
     max-width: 700px;
-    max-height: 300px;
+    max-height: 350px;
     overflow: hidden;
     display: block;
   }
   
   @media (max-width: 1024px) {
-    .cta {
+    .textbox {
       background-attachment: scroll;
     }
   }
   
   @media (min-width: 769px) {
-    .cta .cta-btn-container {
+    .textbox .textbox-btn-container {
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -109,24 +114,23 @@
   padding: 20px;
 }
 
-.featured-services .icon-box-bg {
-  background-image: linear-gradient(0deg, #222222 0%, #2f2f2f 50%, #222222 100%);
-}
-
-.featured-services .icon-box{
-  margin-bottom: 10px;
-}
-
-.featured-services .icon {
-  color: var(--red);
-  font-size: 42px;
+.featured-services .icon-box {
+  color: white;
+  font-size: 45px;
   margin-right: 15px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(var(--red), rgb(128, 18, 18));
+  width: 4rem; height: 4rem;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  border-radius: 0.75rem;
 }
 
 .featured-services .title {
-  font-weight: 700;
-  font-size: 22px;
+  font-weight: 600;
   color: #222222;
+  font-size: 32px;
 }
 
 .featured-services .description {

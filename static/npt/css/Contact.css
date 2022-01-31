@@ -3,8 +3,10 @@
 --------------------------------------------------------------*/
 
 .contact .info {
-    border-top: 3px solid #55749c;
-    border-bottom: 3px solid #55749c;
+    /*border-top: 3px solid #55749c;
+    border-bottom: 3px solid #55749c;*/
+    border-top: 3px solid var(--red);
+    border-bottom: 3px solid var(--red);
     padding: 30px;
     background: #fff;
     width: 100%;
@@ -17,7 +19,8 @@
   }
 
   .contact .info i {
-    background: #55749c;
+    /*background: #55749c;*/
+    background: var(--red);
     color: #fff;
     font-size: 25px;
     float: left;
@@ -79,8 +82,10 @@
 
   .contact .php-email-form {
     width: 100%;
-    border-top: 3px solid #55749c;
-    border-bottom: 3px solid #55749c;
+    /*border-top: 3px solid #55749c;
+    border-bottom: 3px solid #55749c;*/
+    border-top: 3px solid var(--red);
+    border-bottom: 3px solid var(--red);
     padding: 30px;
     background: #fff;
     box-shadow: 0 0 24px 0 rgb(158, 151, 151);

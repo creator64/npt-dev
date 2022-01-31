@@ -3,7 +3,6 @@
 {% load static %}
 
 {% block secttitle %} Over Ons {% endblock %}
-{% block sectdesc %} Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.{% endblock %}
 
 {% block title %} npt - over ons {% endblock %}
 
@@ -25,53 +24,54 @@
 <body>
 <section id="about" class="about">
     <div class="container-fluid">
-
       <div class="container-content">
-      <div class="row ms-4 rowc">
-        <div class="col-lg-6 order-1 order-lg-2">
-            <figure>
-                <img src="{% static 'npt/images/about.jpg' %}" class="img-fluid" alt="">
-            </figure>
-        </div>
-        
-        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-          <h3 class="pt-3">Over NPT</h3>
-          <p>
-            Ons bedrijf is gestart in 1974 in het Groothandelsgebouw, ook voorheen was familie van oudsher bekend met handel 
-            en zelfs productie van perzische tapijten (kashan tapijtknoperijen en weverij, eind 19e eeuw).
-          </p>
-          <p>
-            Gemerkt werd dat er veel vraag was naar tapijten en dat door familie hierin voorzien kon worden met goede inkomsten.
-            In eerste instantie richtte ons bedrijf zich op perzische handvervaardigde kunststukken en later algemeen oosterse vloerkleden.
-          </p>
 
-          <p>
-            Tegenwoordig produceren wij allerlei soorten tapijten van klassieke Perziche tapijten tot machinale tapijten
-          </p>
-        </div>
-      </div>
-
-      <div class="row ms-4 rowc">
-          <div class="col-lg-6">
-            <img src="{% static 'npt/images/storeold.jpg' %}" class="img-fluid mt-4" alt="">
-            <figcaption> <i> NPT in het Groothandelsgebouw </i> </figcaption>
-          </div>
-
-          <div class="col-lg-6 pt-4 content">
-            <h3>Oprichting</h3>
+        <div class="row ms-4 rowc">
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3 class="pt-3">Over NPT</h3>
             <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
+              NPT is een familiebedrijf dat is gestart in 1974 in het Groothandelsgebouw.
+              Ook voorheen was familie van oudsher bekend met de handel 
+              en zelfs productie van perzische tapijten (kashan tapijtknoperijen en weverij, eind 19e eeuw).
+              Daarom kunnen wij u met een combinatie van onze ervaring en expertise helpen en adviseren met het uitzoeken van een nieuw kleed.
+            </p>
+            <p>
+              Gemerkt werd dat er veel vraag was naar tapijten en onze familie kon ons er goed van voorzien.
+              In eerste instantie richtte ons bedrijf zich op perzische handvervaardigde kunststukken,
+              maar door de groeiende vraag besloten we later om onze collectie te verbreden en 
+              richtten we ons ook op algemene Oosterse vloerkleden uit het gebied dat zich strekt tussen China en Noord Afrika.
             </p>
           </div>
+          <div class="col-lg-6">
+            <img src="{% static 'npt/images/storeold.jpg' %}" class="img-fluid mt-4" alt="">
+            <figcaption> <i> NPT in de jaren '80 </i> </figcaption>
+          </div>
+        </div>
 
-      </div>
-
-      </div>
+        <div class="row ms-4 pt-lg-4 rowc">
+            <div class="col-lg-6 pt-4 content">
+              <h3>Over de ondernemer Ayar</h3>
+              <p>
+                  Vanaf leeftijd 12 was Ayar al betrokken en leerde hij bij zijn vader over de handel en over de vele variaties in de producten.
+                  Ondanks interessen voor andere terreinnen bleef hij, ook tijdens zijn studie aan de TU Delft en werkzaanheden in ingenieursrichting,
+                  verbonden met het familiebedrijf en resulteerde dit uiteindelijk in fulltime samenwerking en werkzaamheid als zelfstandige ondernemer.
+              </p>
+              <p>
+                  Vooral contact en verzoring van interieur voor klanten als onderdeel van de winstgevende handel bleek voldoening te geven
+                  waarbij klantvriendelijkheid als eigenschap van nut was voor hem.
+              </p>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+              <figure>
+                  <img src="{% static 'npt/images/about.jpg' %}" class="img-fluid" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
 
     </div>
   </section><!-- End About Us Section -->
+
 </body>
 
-  {% endblock %}
+{% endblock %}
