@@ -38,7 +38,7 @@
             </div>
             <div id="collapse{{f.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{f.id}}">
                 <div class="panel-body px-3 mb-4">
-                    {{f.a}}
+                    {{f.a | safe}}
                 </div>
 		    </div>
           {% endfor %}

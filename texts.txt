@@ -212,3 +212,17 @@ verbonden met het familiebedrijf en resulteerde dit uiteindelijk in fulltime sam
 
 Vooral contact en verzoring van interieur voor klanten als onderdeel van de winstgevende handel bleek voldoening te geven
 waarbij klantvriendelijkheid als eigenschap van nut was voor hem.
+
+
+comment:
+FOTOS
+    Faq:
+        3(6)
+        Zijn al onze tapijten handgeknoopt?
+        Hoe bescherm ik mijn tapijt tegen motten? 
+        Waarom zijn perzische tapijten zo duur?
+        Zijn er ook hoogpolige Perzische tapijen?
+        (Zijn onze tapijten geschikt voor buiten?)
+    Over Ons:
+        1
+        Over de ondernemer Ayar
