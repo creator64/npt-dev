@@ -27,6 +27,11 @@
 	<title>{% block title %}{% endblock %}</title>
 </head>
 
+
+<!-- global variables -->
+{% firstof "06 21 63 73 12" as phone_number %}
+<!-- end global variables -->
+
 <!--javascript for copying info (prf and page) in collection when going to another page or view a carpet-->
 <script type="text/javascript">
 

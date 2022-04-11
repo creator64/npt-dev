@@ -16,22 +16,25 @@ def contact(response):
 
 	if bool(data):
 		#send the email
-		sender_email = "<" + data["email"] + ">"
+		sender_email =  data["email"]
 		subject = data["subject"]
-		message = data["message"]
+		name = data["name"]
+		message = data["message"] + "\n" + "gestuurd door " + sender_email + "\n" + "naam: " + name
 
 		sent_mail = send_mail(subject,
 				  message,
 				  sender_email,
 				  [EMAIL_HOST_USER],
-				  fail_silently=True)
+				  fail_silently=False)
 
 		if bool(sent_mail):
 			state = "success"
 		else:
 			state = "failure"
+		sent_from_email = sender_email
 
-		return render(response, "main/contact.html", {"actdict": {"contact": "active"}, "state": state}) 
+		return render(response, "main/contact.html", {"actdict": {"contact": "active"}, "state": state, 
+													  "sent_from_email": sent_from_email}) 
 	else:
 		return render(response, "main/contact.html", {"actdict": {"contact": "active"}}) 
 

@@ -24,7 +24,7 @@ f2 = Feature('Advies',
 
 f3 = Feature('Gratis Thuis Proberen', 
 			'''Als u in onze winkel een tapijt ziet dat u mooi vindt, maar u weet niet of het ook in uw interieur goed tot zijn recht komt, 
-			   kunt u het op proef in uw huis of kantoor uitproberen.'''
+			   kunt u het in uw huis of kantoor uitproberen.'''
 			   #Wij brengen hiervoor alleen de transportkosten voor het halen en brengen in rekening als u besluit het tapijt niet te kopen. 
 			   #Als u het tapijt definitief aankoopt worden de door u betaalde bezorgkosten in mindering gebracht.''',
 			   ,icon="fas fa-home")

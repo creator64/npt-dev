@@ -2,8 +2,7 @@
 {% load static %}
 
 {% block secttitle %} Contact {% endblock %}
-{% block sectdesc %} Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. 
-Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.{% endblock %}
+{% block sectdesc %} {% endblock %}
 
 <head>
   {% block link %}
@@ -46,7 +45,7 @@ Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi 
             <div class="phone">
               <i class="bi bi-phone"></i>
               <h4 class="info-title">Bel Ons:</h4>
-              <p  class="info-body">+31 6 00 00 00 00</p>
+              <p  class="info-body">{{phone_number}}</p>
             </div>
           </div>
 
@@ -54,13 +53,16 @@ Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi 
             <div class="phone">
               <i class="bi bi-door-open"></i>
               <h4 class="info-title">Openingstijden:</h4>
-              <p  class="info-body">ma t/m za 12:00 - 18:00</p>
+              <p  class="info-body">Op afspraak</p>
             </div>
           </div>
 
-          <div class="explination my-1">Neem een bezoek in de winkel! Wij zijn altijd, behalve op feestdagen, van maandag tot en met zaterdag open van 12 tot 18 uur
-            voor u. U kunt ook bellen op afspraak. Nog meer tekst hier mogelijk blablablablablababblablablalblablablablaablb.
-            <iframe width="100%" height="290px" id="gmap_canvas" src="https://maps.google.com/maps?q=Oostzeedijk%20Beneden%2031b%20Rotterdam&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          <div class="explination my-1" id="info">
+            Wij zijn normaal gesproken open van 13:00 tot 17:00 op alle dagen behalve zondag.
+            Het kan echter zo zijn dat er niemand aanwezig is in de winkel. 
+            Daarom verzoeken we u om, voordat u naar ons komt, ons eerst te bellen naar {{phone_number}}.
+            <iframe width="100%" height="290px" id="gmap_canvas" 
+            src="https://maps.google.com/maps?q=Oostzeedijk%20Beneden%2031b%20Rotterdam&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
       </div>
 
@@ -99,11 +101,15 @@ Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi 
             {% if state == None %}
             {% elif state == "failure" %}
               <div class="error-message">
-                Het spijt ons, uw email kon helaas niet worden verstuurd door een onbekende fout.
+                Het spijt ons, uw email kon helaas niet worden verstuurd door een onbekende fout. <br>
                 Probeer het later opnieuw.
               </div>
             {% elif state == "success" %}
-              <div class="sent-message"> Uw email is verstuurd. Bedankt voor uw bericht!</div>
+              <div class="sent-message"> 
+                Uw email is verstuurd. Bedankt voor uw bericht! Wij zullen u binnen 12 uur beantwoorden <br> 
+                Check nog goed of u geen spelfouten heeft gemaakt in uw email. <br>
+                U heeft ingetoetst: {{sent_from_email}}
+              </div>
             {% endif %}
             </div>
             
