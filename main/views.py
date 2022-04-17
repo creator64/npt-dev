@@ -25,7 +25,7 @@ def contact(response):
 				  message,
 				  sender_email,
 				  [EMAIL_HOST_USER],
-				  fail_silently=False)
+				  fail_silently=True)
 
 		if bool(sent_mail):
 			state = "success"
