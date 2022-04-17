@@ -26,5 +26,6 @@ urlpatterns = [
     path("contact/", view_main.contact),
     path("about/", view_main.about),
     path("faq/", view_main.faq),
+    #path("gallery/", view_main.gallery)
     #path("collection/", include("collection.urls")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

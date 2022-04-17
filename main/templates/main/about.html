@@ -4,10 +4,6 @@
 
 {% block secttitle %} Over Ons {% endblock %}
 
-{% block title %} npt - over ons {% endblock %}
-
-{% block content %}
-
 <head>
   {% block link %}
     <link href="{% static 'npt/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
@@ -19,9 +15,11 @@
     <link href="{% static 'npt/mainfiles/style.css' %}" rel="stylesheet">
     <link href="{% static 'npt/css/About.css' %}" rel="stylesheet">
   {% endblock %}
+
+  {% block title %} npt - over ons {% endblock %}
 </head>
 
-<body>
+{% block content %}
 <section id="about" class="about">
     <div class="container-fluid">
       <div class="container-content">
@@ -62,7 +60,5 @@
         </div>
     </div>
   </section><!-- End About Us Section -->
-
-</body>
 
 {% endblock %}

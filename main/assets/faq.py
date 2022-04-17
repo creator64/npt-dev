@@ -19,7 +19,7 @@ f8 = Faq("Kun je met schoenen op een tapijt lopen?")
 f9 = Faq("Waar komen onze producten precies vandaan?")
 f10 = Faq("Zijn er ook hoogpolige Perzische tapijen?")
 
-flist = [f1, f6, f5, f7, f3, f8, f4, f2, f10, f9]
+flist = [f1, f6, f7, f3, f8, f4, f2, f10, f9]
 
 # Answers
 
@@ -37,17 +37,17 @@ dat er altijd genoeg tapijten zijn die uw huis, kantoor of winkel kunnen verfraa
 f2.a = """<b> Jazeker. </b> Uw tapijt zal niet worden beschadigd als u het op een verwarmde vloer legt."""
 
 f3.a = """
-<b> Helaas hebben wij voorlopig nog geen tapijten die geschikt zijn voor in de tuin of op het terras. </b>
-Tapijten voor buiten moeten namelijk weersbestendig zijn. 
-Dat houdt in dat ze zijn beschermd tegen schadelijke invloeden uit de natuur zoals regen, 
-vuil uit de buitenlucht of verkleuring door zonlicht. 
-Een Perzisch tapijt is dat bijvoorbeeld niet, want na een regenbui zullen de haren worden verhard door het water."""
+Vroeger werden in kleine dorpjes handgeknoopte tapijten buiten gewassen in de rivieren en daarna opgedroogd in de zon.
+Of u onze tapijten buiten kan leggen in uw tuin of terras, hangt echter wel af van de omstandigheden. <br>
+Als u interesse heeft om een tapijt buiten te leggen dan zullen wij u verder adviseren of dat kan en hoe het kan met dat tapijt.
+"""
 
 f4.a = """
-<b> Het antwoord is nee. </b> Wij hebben namelijk ook een aantal machinale tapijten. 
-Hierin is natuurlijk niet net zoveel energie in gestopt als bij handgeknoopte tapijten, waardoor het ook minder prijzig is, 
-maar ze kunnen alsnog beschikken over mooie patronen en kleuren waardoor ze zeker goed bij uw interieur kunnen passen. 
-Uiteraard vertellen we het u of het tapijt dat u zien handgeknoopt of machinaal is.""" 
+Wij zijn gespecialiseerd in handgeknoopte tapijten. 
+Echter indien gewenst kunnen we wel machinale tapijtenen leveren. 
+Deze zijn minder prijzig en ze kunnen alsnog beschikken over mooie patronen en kleuren waardoor 
+ze zeker goed bij uw interieur kunnen passen. 
+Uiteraard vertellen we het u of het tapijt dat u ziet handgeknoopt of machinaal is.""" 
 
 f5.a = """
 U heeft net uw interieur verfraaid met een wollen Oosters tapijt. U wil niet dat uw tapijt wordt opgegeten en beschadigd
@@ -80,7 +80,7 @@ Leg het op of onder uw tapijt en het balletje doet de rest.
 f6.a = """
 Soms is er aan een Perzisch tapijt wel door 2 man 2 jaar aan gewerkt. 
 Dat is dus 1 jaar per man! 
-Het zijn unieke kunstproducten met de hand vervaardigd en er wordt enorm veel tijd en aandacht aan besteed 
+Het zijn unieke kunstproducten, die met de hand vervaardigd zijn, en er wordt enorm veel tijd en aandacht aan besteed 
 wat resulteert in een buitengewoon goede en fijne kwaliteit. <br>
 Als je arbeid en materiaal in de prijs meerekent, zijn Perzische tapijten dus eigenlijk helmaal niet zo duur! 
 Ze zijn wel kostbaar, omdat het waardeobjecten zijn van uiterste klasse.
@@ -114,7 +114,7 @@ f7.a = """
 
 f8.a = """
 <b> Jazeker. </b> Vaak wordt gedacht dat tapijten met fijne kwaliteit ook kwetsbaar zijn, 
-Maar eigenlijk zijn ze net zo sterk als vloerbedekking van projectkwaliteit 
+maar eigenlijk zijn ze net zo sterk als vloerbedekking van projectkwaliteit 
 en dus zullen ze niet worden beschadigd als je er met schoenen overheen loopt. 
 Daarnaast zijn ze goed te reinigen wanneer er vuil op komt."""
 
@@ -122,18 +122,17 @@ f9.a = """
 Onze producten komen uit de volgende landen:
 <ul>
 <li> China </li>
-<li> Thailand </li> 
-<li> Nepal </li>
 <li> India </li>
-<li> Rusland </li>
 <li> Pakistan </li>
 <li> Afghanistan </li>
 <li> Iran </li>
 <li> Turkije </li>
-<li> Algerije </li>
-<li> Marokko </li>
-<!-- <li> Frankrijk </li> -->
-</ul>
+<li> Het gebied van Kaukasus: </li>
+<ul>
+<li> Rusland </li>
+<li> Armenië </li>
+<li> Azerbeidzjan </li>
+</ul> </ul>
 """
 
 
@@ -143,7 +142,7 @@ Hoogpolige tapijten hebben haren van ongeveer 12 mm of hoger.
 Perzische tapijten hebben dat echter meestal niet. 
 Er zijn wel andere handgeknoopte hoogpolige tapijten bijvoorbeeld Chinese tapijten. 
 Wij beschikken ook over reliëfgeschoren Chinese tapijten in onze collectie. 
-Dat houdt in dat figuren in de tapijt worden uitgesneden dankzij deze hoge pool. 
+Dat houdt in dat figuren in het tapijt worden uitgesneden dankzij deze hoge pool. 
 Daardoor komen de figuren naar voren en komt het tapijt ook meer tot leven. Dat kunt u zien op de foto's hieronder.
 <div class='container'>
     <div class='row'>

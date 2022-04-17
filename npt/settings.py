@@ -27,7 +27,7 @@ SECRET_KEY = 'hb&y&xf=1*48&ltd09tq-7zq68k^xj!4=v*qw5#^i7*#65@ri1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.17',
+ALLOWED_HOSTS = ['192.168.1.12',
                  '127.0.0.1',
                  '192.168.2.9']
 
@@ -136,8 +136,8 @@ MEDIA_ROOT = 'media'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = "nptrotterdam@gmail.com"
-EMAIL_HOST_PASSWORD = "Hallo100!"
+EMAIL_HOST_USER = os.environ.get("NPT_EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.environ.get("NPT_EMAIL_HOST_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False

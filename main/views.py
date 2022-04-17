@@ -43,3 +43,6 @@ def about(response):
 
 def faq(response):
 	return render(response, "main/faq.html", {"actdict": {"faq": "active"}, "flist": flist, })
+
+#def gallery(response):
+#	return render(response, "main/gallery.html", {"actdict": {"gallery": "active"}}) 

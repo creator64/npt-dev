@@ -10,8 +10,7 @@ class Feature:
 
 f1 = Feature('Garantie',
 			'''De tapijten die NPT verkoopt zijn gegarandeerd handgeknoopt en van excellente kwaliteit. 
-			   Daarom ontvangt iedere koper een Certificaat van Echtheid en een garantie van 2 jaar bij normaal gebruik.
-			   Reclames binnen twee maanden.''',
+			   Daarom ontvangt iedere koper een Certificaat van Echtheid en een garantie van 2 jaar bij normaal gebruik.''',
 			   icon="fas fa-clock")
 
 
