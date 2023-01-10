@@ -14,6 +14,7 @@ rgba(59,0,0,.5) (grijsachtig)
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap');
 
 :root {
   --red: #BA200D;
@@ -215,8 +216,8 @@ img.rounded {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  /*color: #4c7397;*/
   color: var(--red-fade-2);
+  font-family: 'Raleway';
 }
 
 .section-title .title::before {
@@ -225,8 +226,8 @@ img.rounded {
   display: block;
   width: 150px;
   height: 2px;
-  background: rgb(186, 212, 233);
-  bottom: 1px;
+  background: rgb(248, 110, 85);
+  bottom: 2px;
   left: calc(50% - 75px);
 }
 

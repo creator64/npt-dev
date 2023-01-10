@@ -41,6 +41,7 @@
     font-size: 32px;
     color: var(--red);
     font-style: italic;
+    font-family: 'Raleway';
   }
 
   .textbox .subtitle{
